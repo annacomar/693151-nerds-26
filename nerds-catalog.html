@@ -2,38 +2,48 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс:главная страница</title>
+    <title>HTML Academy: Нёрдс: каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo"><h1 class="visually-hidden">Дизайн-студия "Нердс"</h1><img src="img/svg/logo.svg" alt="Логотип студии Нёрдс" width="" height="">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/svg/logo.svg" alt="Логотип студии Нёрдс" width="" height="">
         </a>
         <ul class="site-navigation">
-          <li>Студия</li>
+          <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</li>
-          <li><a href="nerds-catalog.html">Магазин</a></li>
+          <li class="site-navigation-current">Магазин</li>
           <li><a href="#">Контакты</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
+          <h1>Магазин готовых шаблонов</h1>
     </header>
 
-    <main>
-      <section class="main-page-catalog">
-        <h2 class="visually-hidden">Наша работа</h2>
-        <h2>Веб-сайты</h2>
-          <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-          <a class=href="#">Заказать</a>
-        <h2>Приложения</h2>
-          <p>Покорите топ-10 приложений в Appstore и Google Play</p>
-          <a href="#">Заказать</a>
-        <h2>Презентации</h2>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#">Заказать</a>
+    <main class="container">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <!-- форма-->
       </section>
+
+      <section>
+        <h2 class="visually-hiddden">Шаблоны</h2>
+        <ul>
+          <li><h2 class="visually-hiddden">Sedona</h2></li>
+          <li><h2 class="visually-hiddden">Pink</h2></li>
+          <li><h2 class="visually-hiddden">Borodinski</h2></li>
+          <li><h2 class="visually-hiddden">Mishka</h2></li>
+          <li><h2 class="visually-hiddden">HtmlAcademy</h2></li>
+          <li><h2 class="visually-hiddden">Кваст</h2></li>
+        </ul>
+
+      </section>
+
+
     </main>
 
     <footer>
