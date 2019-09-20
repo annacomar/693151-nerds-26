@@ -25,10 +25,28 @@
     </header>
 
     <main class="container">
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- форма-->
+        <h2>Сетка</h2>
+        <ul class="Type">
+          <li>Адаптивная</li>
+          <li>Фиксированная</li>
+          <li>Резиновая</li>
+        </ul>
+        <h2>Особенности</h2>
+        <ul class="details">
+          <li>Слайдер</li>
+          <li>Блок преимуществ</li>
+          <li>Новости</li>
+          <li>Галерея</li>
+          <li>Корзина</li>
+        </ul>
+        <button class="sort-by" type="submit">Показать</button>
       </section>
+
+
 
       <section>
         <h2 class="visually-hiddden">Шаблоны</h2>
@@ -56,5 +74,26 @@
         <span>Давайте дружить, это выгодно!</span>
         <span>Скидка 10% для друзей из социальных сетей</span>
     </footer>
+    <!--попап-->
+    <h3>Напишите нам</h3>
+    <form class="contact-form" method="post"
+          action="https://echo.htmlacademy.ru">
+          <p>
+            <label for="user-name">Ваше имя</label>
+            <input id="user-name" type="text"
+                   name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+          <label for="user-email">Ваш e-mail</label>
+          <input id="user-email" type="email"
+                 name="email" placeholder="e-mail@example.com">
+          </p>
+          <p>
+          <label for="message-text">Текст письма</label>
+          <input id="message-text" type="text"
+                 name="text" placeholder="В свободной форме">
+          </p>
+      <button type="submit">Отправить</button>
+    </form>
   </body>
 </html>
