@@ -16,47 +16,116 @@
         </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</li>
+          <li><a href="#">Клиенты</a></li>
           <li class="site-navigation-current">Магазин</li>
           <li><a href="#">Контакты</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
-          <h1>Магазин готовых шаблонов</h1>
+      </nav>
+        <h1>Магазин готовых шаблонов</h1>
     </header>
 
     <main class="container">
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- форма-->
-        <h2>Сетка</h2>
-        <ul class="Type">
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
+        <input type="range">
+        <form class="filter" method="get">
+          <action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <fieldset>
+            <p>
+            <label for="zero">от</label>
+            <input id="zero" type="number"
+                   name="name" placeholder="0">
+            </p>
+            <p>
+              <label for="15000">до</label>
+              <input id="zero" type="number"
+                     name="name" placeholder="0">
+          </fieldset>
+
+        <legend>Сортировать:</legend>
+        <fieldset>
+          <ul>
+            <li>
+            <label for="item-price">По цене</label>
+            <input id="item-price" type="text"
+                   name="item-price">
+            </li>
+            <li>
+            <label for="item-type">По типу</label>
+            <input id="item-type" type="text"
+                   name="item-type">
+            </li>
+
+            <li>
+              <label for="item-name">По названию</label>
+              <input id="item-name" type="text"
+                     name="item-name">
+            </li>
+
+        <li>Вниз</li>
+        <li>Вверх</li>
+      </ul>
+        </fieldset>
+
+        <fieldset>
+                    <legend>Сетка</legend>
+                     <ul class="type">
+                      <li>
+                        <input type="radio" name="grid" value="adaptive-grid" id="filter-adaptive-grid"checked>
+                        <label for="filter-adaptive-grid">Адаптивная</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="grid" value="fixed-grid" id="filter-fixed-grid">
+                          <label for="filter-fixed-grid">Фиксированная</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="grid" value="fluid-grid" id="filter-fluid-grid">
+                        <label for="filter-fluid-grid">Резиновая</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+
+        <fieldset>
+          <legend>Особенности</legend>
+          <ul class="details">
+          <li>
+            <input type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label>
+          </li>
+          <li>
+            <input type="checkbox" name="advantages" id="filter-advantages">
+            <label for="filter-advantages">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li>
+            <input type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="basket" id="filter-basket">
+            <label for="filter-basket">Корзина</label>
+          </li>
         </ul>
-        <h2>Особенности</h2>
-        <ul class="details">
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
+        </form>
         <button class="sort-by" type="submit">Показать</button>
       </section>
-
-
 
       <section>
         <h2 class="visually-hiddden">Шаблоны</h2>
         <ul>
-          <li><h2 class="visually-hiddden">Седона</h2><img src="img/img-sedona-jpg.jpg" alt="Информационный сайт для туристов"></li>
-          <li><h2 class="visually-hiddden">Pink</h2><img src="img/img-pink-jpg.jpg" alt="Магазин розовых фильтров"></li>
-          <li><h2 class="visually-hiddden">Барбершоп Бородинский</h2><img src="img/img-barbershop-jpg.jpg" alt="Сайт барбершопа"></li>
-          <li><h2 class="visually-hiddden">Mishka</h2><img src="img/img-mishka-jpg.jpg" alt="Магазин товаров ручной работы для дома"></li>
-          <li><h2 class="visually-hiddden">А плюс</h2><img src="img/img-aplus-jpg.jpg" alt="Учебное заведение"></li>
-          <li><h2 class="visually-hiddden">Кваст</h2><img src="img/img-kvast-jpg.jpg" alt="Крафтовый квас"></li>
+          <li><a href="#"><h2 class="visually-hiddden">Седона</h2><img src="img/img-sedona-jpg.jpg" alt="Информационный сайт для туристов"></a></li>
+          <li><a href="#"><h2 class="visually-hiddden">Pink</h2><img src="img/img-pink-jpg.jpg" alt="Магазин розовых фильтров"></a></li>
+          <li><a href="#"><h2 class="visually-hiddden">Барбершоп Бородинский</h2><img src="img/img-barbershop-jpg.jpg" alt="Сайт барбершопа"></a></li>
+          <li><a href="#"><h2 class="visually-hiddden">Mishka</h2><img src="img/img-mishka-jpg.jpg" alt="Магазин товаров ручной работы для дома"></a></li>
+          <li><a href="#"><h2 class="visually-hiddden">А плюс</h2><img src="img/img-aplus-jpg.jpg" alt="Учебное заведение"></a></li>
+          <li><a href="#"><h2 class="visually-hiddden">Кваст</h2><img src="img/img-kvast-jpg.jpg" alt="Крафтовый квас"></a></li>
         </ul>
 
       </section>
@@ -66,15 +135,15 @@
 
     <footer>
       <ul class="social list">
-        <li><a class="social-button" href="#"><span class="visually-hidden">В контакте</span>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span>
+        <li><a class="social-button" href="#"><span class="visually-hidden">В контакте</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
         <!--здесь может быть еще одна кнопка<li><a class="social-button" href="#"></a></li>-->
       </ul>
         <span>Давайте дружить, это выгодно!</span>
         <span>Скидка 10% для друзей из социальных сетей</span>
     </footer>
-    <!--попап-->
+    <!--popup-->
     <h3>Напишите нам</h3>
     <form class="contact-form" method="post"
           action="https://echo.htmlacademy.ru">
@@ -94,6 +163,7 @@
                  name="text" placeholder="В свободной форме">
           </p>
       <button type="submit">Отправить</button>
+      <button type="button" aria-label="Закрыть">x</button>
     </form>
   </body>
 </html>
