@@ -4,25 +4,28 @@
     <meta charset="utf-8">
     <title>Дизайн-студия "Нердс"</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
+      <div class="container header">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li>Студия</li>
+          <li><a href="#">Студия</li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="nerds-catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
+        </ul>
+          <ul class="basket">
           <li><a class="basket" href="#">Корзина</a></li>
         </ul>
       </nav>
-    </header>
-    <main class="container">
+
+
 
       <div class="slider">
         <span>Дорого, долго, скрупулезно</span>
@@ -34,27 +37,36 @@
 <img src="img/slide-picture2.png" alt="Планшет и телефон">
       -->
       </div>
+    </div>
 
+     </header>
+      <main class="container">
+          <h2 class="visually-hidden">Наши услуги</h2>
       <section class="advantages">
-        <h2 class="visually-hidden">Наши услуги</h2>
+        <div class="advantages-item">
         <h3>Веб-сайты</h3>
           <img src="img/advantage-picture-red.png" alt="Заказать веб-сайт" width="" height="">
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
           <a class="button red" href="#">Заказать</a>
+        </div>
+      <div class="advantages-item">
         <h3>Приложения</h3>
         <img src="img/advantage-picture-green.png" alt="Заказать приложение" width= "" height="">
           <p>Покорите топ-10 приложений в Appstore и Google Play</p>
           <a class="button green" href="#">Заказать</a>
+        </div>
+        <div class="advantages-item">
         <h3>Презентации</h3>
         <img src="img/advantage-picture-yellow.png" alt="Заказать презентацию" width= "" height="">
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="button yellow" href="#">Заказать</a>
+        </div>
       </section>
 
+     <h3 class="visually-hidden">О студии Нёрдс</h3>
       <div class="about">
-      <section>
-        <h3 class="visually-hidden">О студии Нёрдс</h3>
-        <span>Мы - маленькая, но гордая дизайн-студия из Краснодара.</span>
+      <section class="studio-nerds">
+        <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива.
            Работаем, не покладая рук, как роботы.</p>
            <h4>Выполняем заказы на разработку:</h4>
@@ -65,7 +77,7 @@
            </ul>
       </section>
 
-      <aside>
+      <aside class="stats-nerds">
         <img src="img/nerds-picture.png" alt="Логотип Студии Нёрдс" width="" height="">
         <h4>С 2004 года любим точность во всём:</h4>
         <ul class="stat-percents">
@@ -79,19 +91,21 @@
           <li>Минимальная предоплата</li>
         </ul>
       </aside>
+      </div>
 
+      <h3 class="visually-hidden">Логотипы партнёров</h3>
       <section class="partners">
-        <h3 class="visually-hidden">Логотипы партнёров</h3>
         <a href=""><img src="img/htmlacademy-logo.png" alt="Логотип Html Academy"></a>
         <a href=""><img src="img/borodinski-logo.png" alt="Логотип Бородинский"></a>
         <a href=""><img src="img/pink-logo.png" alt="Логотип Пинк"></a>
         <a href=""><img src="img/mishka-logo.png" alt="Логотип Мишка"></a>
       </section>
-    </div>
+
+</main>
+
 
     <footer class="main-footer">
-
-      <section>
+        <section>
         <h3 class="visually-hidden">
           Как нас найти?
         </h3>
@@ -101,18 +115,23 @@
          </span>
          <button class="button red">Напишите нам</button>
       </section>
-        </main>
-      <ul class="social list">
+      <div class="container">
+      <ul class="footer-social">
         <li><a class="social button" href="#"><span class="visually-hidden">В контакте</span></a></li>
         <li><a class="social button" href="#"><span class="visually-hidden">Facebook</span></a></li>
         <li><a class="social button" href="#"><span class="visually-hidden">Instagram</span></a></li>
         <!--здесь может быть еще одна кнопка<li><a class="social-button" href="#"></a></li>-->
       </ul>
+      <div class="social-discount">
         <h4>Давайте дружить, это выгодно!</h4>
-        <span>Скидка 10% для друзей из социальных сетей</span>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+      </div>
     </footer>
 
+
     <!--попап-->
+    <div class="popup-email-form">
     <h3>Напишите нам</h3>
     <form class="contact-form" method="post"
           action="https://echo.htmlacademy.ru">
@@ -133,5 +152,6 @@
           </p>
       <button class="button red" type="submit">Отправить</button>
     </form>
+  </div>
   </body>
 </html>

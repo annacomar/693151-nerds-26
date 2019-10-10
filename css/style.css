@@ -9,6 +9,19 @@ body {
   font-style: normal;
   text-align: left;
   color: #283136;
+  background-color: #eeeeee;
+
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: white;
+}
+
+.header {
+  background-color: #eeeeee;
 }
 
 a {
@@ -42,6 +55,25 @@ a {
 
 /*header*/
 
+.main-header {
+  min-height: 545px;
+}
+.main-navigation {
+  text-transform: uppercase;
+  display: flex;
+  min-height: 115px;
+}
+.main-navigation h1 {
+  font-size: 55px;
+  text-align: center;
+  line-height: 55px;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
 .main-header-logo:hover {
   color:;
 }
@@ -50,15 +82,17 @@ a {
   color: ;
 }
 
-.main-navigation {
-  text-transform: uppercase;
-}
-.main-navigation h1 {
-  font-size: 55px;
-  text-align: center;
-  line-height: 55px;
-}
 
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 520px;
+  justify-content: space-between;
+  margin-left: 202px;
+  margin-right: 245px;
+}
 
 .site-navigation a {
   line-height: 30px;
@@ -66,9 +100,7 @@ a {
   color: #000000;
 
 }
-.site-navigation {
-  list-style: none;
-}
+
 .site-navigation a:hover {
   color: #fb565a;
 }
@@ -80,9 +112,25 @@ a {
   text-decoration: underline;
 }
 
+.basket {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
+}
+
 /*main*/
 .advantages {
 list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+margin-bottom: 80px;
+}
+
+.advantages-item {
+  width: 300px;
 }
 
 .advantages h3 {
@@ -93,6 +141,11 @@ list-style: none;
   text-align: left;
   text-transform: uppercase;
   color: #000000;
+}
+
+.about {
+  display:flex;
+  justify-content: space-between;
 }
 
 .about li{
@@ -111,12 +164,25 @@ list-style: none;
   text-transform: uppercase;
 }
 
+.studio-nerds {
+  width: 650px;
+}
+
+.stats-nerds {
+  width: 360px;
+}
+
 .stat-percents {
   font-size: 45px;
   font-weight: bold;
   line-height: 10px;
   text-align: left;
   color: #000000;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*catalog styles*/
@@ -133,6 +199,10 @@ list-style: none;
   text-transform: uppercase;
 }
 
+.catalog {
+  display: flex;
+}
+
 .catalog ul {
   list-style: none;
 }
@@ -142,10 +212,36 @@ list-style: none;
 
 /*footer*/
 
-.social {
+.main-footer .container {
+  display: flex;
+}
+
+.footer-social {
+  display: flex;
+  width: 260px;
   list-style: none;
+  margin-right: 139px;
+}
+
+.social-discount {
+  width: 545px;
+}
+
+.social-discount h4 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
 }
 
 .social.button {
   text-align: center;
+}
+
+
+.main-footer {
+  margin-top: 69px;
+}
+
+.popup-email-form {
+  display: none;
 }
