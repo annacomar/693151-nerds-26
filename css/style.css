@@ -13,6 +13,30 @@ body {
 
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -114,6 +138,9 @@ a {
 
 .basket {
   list-style: none;
+  text-decoration: none;
+  color: #283136;
+  text-decoration: none;
   margin: 0;
   padding: 0;
   align-items: flex-end;
@@ -186,6 +213,44 @@ margin-bottom: 80px;
 }
 
 /*catalog styles*/
+.catalog-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 116px;
+}
+.catalog-columns {
+  display: flex;
+   justify-content: space-between;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  margin-bottom: 60px;
+}
+.catalog-item {
+  width:360px;
+  margin-right: 40px;
+  margin-bottom: 33px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+
+.filters {
+  width: 261px;
+}
 
 .filters ul{
   list-style: none;
@@ -209,6 +274,14 @@ margin-bottom: 80px;
 .catalog a {
   list-style: none;
 }
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
 
 /*footer*/
 

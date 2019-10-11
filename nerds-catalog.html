@@ -10,40 +10,44 @@
 
   <body>
     <header class="main-header">
+      <div class="container header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" alt="Логотип студии Нёрдс" width="" height="">
+          <img src="img/nerds-logo.svg" alt="Логотип студии Нёрдс" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li class="site-navigation-current">Магазин</li>
+          <li class="site-navigation-current"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
-        <h1>Магазин готовых шаблонов</h1>
+      </ul>
+        <ul>
+        <li><a class="basket" href="#">Корзина</a></li>
+
       </nav>
+        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+    </div>
     </header>
 
     <main class="container">
-
+      <div class="catalog-columns">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <input type="range">
-        <form class="filter" method="get">
-          <action="https://echo.htmlacademy.ru">
+        <form class="filters" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend class="legend">Стоимость</legend>
-          <fieldset>
             <p>
             <label for="zero">от</label>
             <input id="zero" type="number"
-                   name="name" placeholder="0">
+                   name="zero" placeholder="0">
             </p>
             <p>
               <label for="15000">до</label>
-              <input id="zero" type="number"
-                     name="name" placeholder="0">
+              <input id="fifteenthouthands" type="number"
+                     name="fifteenthouthands" placeholder="15000">
           </fieldset>
 
         <legend class="legend">Сортировать:</legend>
@@ -75,7 +79,7 @@
                     <legend class="legend">Сетка</legend>
                      <ul class="type">
                       <li>
-                        <input type="radio" name="grid" value="adaptive-grid" id="filter-adaptive-grid"checked>
+                        <input type="radio" name="grid" value="adaptive-grid" id="filter-adaptive-grid" checked>
                         <label for="filter-adaptive-grid">Адаптивная</label>
                       </li>
                       <li>
@@ -113,34 +117,38 @@
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
+          </fieldset>
         </form>
         <button class="button sort-by" type="submit">Показать</button>
       </section>
 
   <h2 class="visually-hiddden">Шаблоны</h2>
       <section class="catalog">
-        <ul>
-          <li><a href="#"><h2 class="visually-hiddden">Седона</h2><img src="img/img-sedona-jpg.jpg" alt="Информационный сайт для туристов"></a></li>
-          <li><a href="#"><h2 class="visually-hiddden">Pink</h2><img src="img/img-pink-jpg.jpg" alt="Магазин розовых фильтров"></a></li>
-          <li><a href="#"><h2 class="visually-hiddden">Барбершоп Бородинский</h2><img src="img/img-barbershop-jpg.jpg" alt="Сайт барбершопа"></a></li>
-          <li><a href="#"><h2 class="visually-hiddden">Mishka</h2><img src="img/img-mishka-jpg.jpg" alt="Магазин товаров ручной работы для дома"></a></li>
-          <li><a href="#"><h2 class="visually-hiddden">А плюс</h2><img src="img/img-aplus-jpg.jpg" alt="Учебное заведение"></a></li>
-          <li><a href="#"><h2 class="visually-hiddden">Кваст</h2><img src="img/img-kvast-jpg.jpg" alt="Крафтовый квас"></a></li>
+        <ul class="catalog-list">
+          <li class="catalog-item"><a href="#"><h2 class="visually-hiddden">Седона</h2><img src="img/img-sedona-jpg.jpg" alt="Информационный сайт для туристов"></a></li>
+          <li class="catalog-item"><a href="#"><h2 class="visually-hiddden">Pink</h2><img src="img/img-pink-jpg.jpg" alt="Магазин розовых фильтров"></a></li>
+          <li class="catalog-item"><a href="#"><h2 class="visually-hiddden">Барбершоп Бородинский</h2><img src="img/img-barbershop-jpg.jpg" alt="Сайт барбершопа"></a></li>
+          <li class="catalog-item"><a href="#"><h2 class="visually-hiddden">Mishka</h2><img src="img/img-mishka-jpg.jpg" alt="Магазин товаров ручной работы для дома"></a></li>
+          <li class="catalog-item"><a href="#"><h2 class="visually-hiddden">А плюс</h2><img src="img/img-aplus-jpg.jpg" alt="Учебное заведение"></a></li>
+          <li class="catalog-item"><a href="#"><h2 class="visually-hiddden">Кваст</h2><img src="img/img-kvast-jpg.jpg" alt="Крафтовый квас"></a></li>
         </ul>
       </section>
+    </div>
+      <ul class="pagination-list"></ul>
     </main>
 
-    <footer>
+    <footer class="main-footer">
+      <div class="container">
       <ul class="footer-social">
-        <li><a class="social-button" href="#"><span class="visually-hidden">В контакте</span></a></li>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a class="social button" href="#"><span class="visually-hidden">В контакте</span></a></li>
+        <li><a class="social button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social button" href="#"><span class="visually-hidden">Instagram</span></a></li>
         <!--здесь может быть еще одна кнопка<li><a class="social-button" href="#"></a></li>-->
       </ul>
-
       <div class="social-discount">
         <h4>Давайте дружить, это выгодно!</h4>
         <p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
       </div>
     </footer>
     <!--popup-->
