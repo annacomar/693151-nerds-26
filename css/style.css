@@ -221,7 +221,7 @@ margin-bottom: 80px;
 }
 .catalog-columns {
   display: flex;
-   justify-content: space-between;
+  justify-content: space-between;
 }
 
 .catalog {
@@ -231,20 +231,20 @@ margin-bottom: 80px;
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 0;
-  margin: 0;
-
   list-style: none;
   margin-bottom: 60px;
 }
 .catalog-item {
   width:360px;
-  margin-right: 40px;
+
   margin-bottom: 33px;
 }
 
 .catalog-item:nth-child(2n) {
-  margin-right: 0;
+  margin-left: 40;
 }
 
 
