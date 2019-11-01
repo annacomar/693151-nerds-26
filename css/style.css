@@ -108,7 +108,6 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {
   display: flex;
-  list-style: none;
   text-transform: uppercase;
   align-items: center;
 }
@@ -126,7 +125,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   width: 460px;
@@ -174,7 +172,6 @@ input[type="radio"].visually-hidden {
 .user-navigation a {
   display: flex;
   justify-content: flex-end;
-  list-style: none;
   text-decoration: none;
   color: #000000;
   font-weight: 500;
@@ -185,8 +182,12 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation a:focus {
-  color: #black-30;
-  rgba(0, 0, 0, 0.3);
+  color: #eeeeee;
+  opacity: 30%;
+}
+.user-navigation a:active {
+  color: #000000;
+  text-decoration: underline;
 }
 
 
@@ -264,8 +265,6 @@ input[type="radio"].visually-hidden {
 .slider-list {
   margin: 0;
   padding: 0;
-
-  list-style: none;
 }
 
 .slider-item {
@@ -325,7 +324,6 @@ input[type="radio"].visually-hidden {
 
 /*main*/
 .advantages {
-  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -491,10 +489,6 @@ input[type="radio"].visually-hidden {
   width: 261px;
 }
 
-.filters ul{
-  list-style: none;
-}
-
 .legend {
   font-size: 18px;
   font-weight: bold;
@@ -507,12 +501,13 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.catalog ul {
+/*.catalog ul {
   list-style: none;
 }
 .catalog a {
   list-style: none;
 }
+*/
 
 .pagination-list {
   display: flex;
@@ -555,23 +550,23 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item a:active {
-    color: #000000;
-    background-color: #ffffff;
-    border: #dbdbdb solid 3px;
+  color: #000000;
+  background-color: #ffffff;
+  border: #dbdbdb solid 3px;
   }
 
 .pagination-item-current a {
-    color: #000000;
-    background-color: #ffffff;
-    border: #dbdbdb solid 3px;
-    padding-top: 16px;
-    padding-right: 20px;
-    padding-left: 16px;
-    padding-bottom: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: #dbdbdb solid 3px;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 16px;
+  padding-bottom: 18px;
   }
 
 .pagination-item-next a {
-  display: flex;
+   display: flex;
   background-color:#eeeeee;
   color: #000000;
   line-height: 18px;
