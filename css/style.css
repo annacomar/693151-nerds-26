@@ -566,7 +566,7 @@ input[type="radio"].visually-hidden {
   }
 
 .pagination-item-next a {
-   display: flex;
+  display: flex;
   background-color:#eeeeee;
   color: #000000;
   line-height: 18px;
@@ -589,14 +589,19 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
+.map-wrapper {
+  position: relative;
+}
+
 .map-wrapper::after {
-  content: url(img/map-marker.png);
+  content: "";
+  background-image: url(../img/map-marker.png);
+  left: 50%;
+  top: 50%;
   background-repeat: no-repeat;
   position: absolute;
-  top:
-  right
-  left:
-  bottom:
+  width: 30px;
+  height: 30px;
 }
 
 .main-footer {

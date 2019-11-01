@@ -48,6 +48,8 @@
         <input type="range">
         <form class="filters" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="reset-fieldset">
+
+
           <legend class="legend upper-block">Стоимость</legend>
             <p class="reset-text">
             <label for="zero">от</label>
@@ -60,30 +62,7 @@
                      name="fifteenthouthands" placeholder="15000">
           </fieldset>
 
-        <fieldset class="reset-fieldset">
-        <legend class="upper-block">Сортировать:</legend>
-          <ul class="reset-list">
-            <li>
-            <label class="upper-block" for="item-price">По цене</label>
-            <input id="item-price" type="text"
-                   name="item-price">
-            </li>
-            <li>
-            <label class="upper-block" for="item-type">По типу</label>
-            <input id="item-type" type="text"
-                   name="item-type">
-            </li>
 
-            <li>
-              <label class="upper-block" for="item-name">По названию</label>
-              <input id="item-name" type="text"
-                     name="item-name">
-            </li>
-
-        <li class="upper-block">Вниз</li>
-        <li class="upper-block">Вверх</li>
-      </ul>
-        </fieldset>
 
         <fieldset class="reset-fieldset">
                     <legend class="legend">Сетка</legend>
@@ -132,10 +111,52 @@
         <button class="button sort-by" type="submit">Показать</button>
       </section>
 
-  <h2 class="visually-hidden">Шаблоны</h2>
+
       <section class="catalog">
+        <h2 class="visually-hidden">Шаблоны</h2>
+        <section class="sort">
+        <h3 class="sort-title">Сортировать:</h3>
+          <ul class="reset-list sort-by-category">
+            <li>
+            <label class="upper-block" for="item-price">По цене</label>
+            <input id="item-price" type="text"
+                   name="item-price">
+            </li>
+            <li>
+            <label class="upper-block" for="item-type">По типу</label>
+            <input id="item-type" type="text"
+                   name="item-type">
+            </li>
+
+            <li>
+              <label class="upper-block" for="item-name">По названию</label>
+              <input id="item-name" type="text"
+                     name="item-name">
+            </li>
+          </ul>
+          <ul class="reset-list sort-by-priority">
+        <li><a href="#" aria-label="Сортировать по убыванию"></a></li>
+        <li><a href="#" aria-label="Сортировать по возрастанию">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+        </svg></a></li>
+      </ul>
+    </section>
+
+
         <ul class="catalog-list reset-list">
-          <li class="catalog-item"><a href="#"><h2 class="visually-hidden">Седона</h2><img src="img/img-sedona-jpg.jpg" alt="Информационный сайт для туристов"></a></li>
+          <li class="catalog-item">
+
+            <h2 class="visually-hidden">Седона</h2>
+            <div class="catalog-image-wrapper">
+              <img src="img/img-sedona-jpg.jpg" alt="Информационный сайт для туристов">
+            </div>
+            <section class="catalog-popup">
+              <h3 href="#"><a >Седона</a></h3>
+              <p>Информационный сайт для туристов</p>
+              <a>Цена</a>
+            </section>
+        </li>
           <li class="catalog-item"><a href="#"><h2 class="visually-hidden">Pink</h2><img src="img/img-pink-jpg.jpg" alt="Магазин розовых фильтров"></a></li>
           <li class="catalog-item"><a href="#"><h2 class="visually-hidden">Барбершоп Бородинский</h2><img src="img/img-barbershop-jpg.jpg" alt="Сайт барбершопа"></a></li>
           <li class="catalog-item"><a href="#"><h2 class="visually-hidden">Mishka</h2><img src="img/img-mishka-jpg.jpg" alt="Магазин товаров ручной работы для дома"></a></li>
