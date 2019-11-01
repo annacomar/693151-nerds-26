@@ -37,7 +37,7 @@
       </header>
 
       <div class="catalog-title-wrapper">
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+        <h1 class="catalog-title reset-text">Магазин готовых шаблонов</h1>
       </div>
 
       <div class="white">
@@ -49,12 +49,12 @@
         <form class="filters" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend class="legend upper-block">Стоимость</legend>
-            <p>
+            <p class="reset-text">
             <label for="zero">от</label>
             <input id="zero" type="number"
                    name="zero" placeholder="0">
             </p>
-            <p>
+            <p class="reset-text">
               <label for="fifteenthouthands">до</label>
               <input id="fifteenthouthands" type="number"
                      name="fifteenthouthands" placeholder="15000">
@@ -144,12 +144,14 @@
         </ul>
       </section>
     </div>
+
+
     <ul class="pagination-list">
-   <li class="pagination-item pagination-item-curre"><a href="#">1</a></li>
-   <li class="pagination-item nt"><a>2</a></li>
-   <li class="pagination-item"><a href="#">3</a></li>
-   <li class="pagination-item"><a href="#">Следующая</a></li>
- </ul>
+      <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+      <li class="pagination-item"><a>2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item-next"><a href="#">Следующая</a></li>
+   </ul>
     </main>
 
     <footer class="main-footer">
@@ -159,7 +161,7 @@
       </h3>
         <img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <img src="img/map-marker.png" width="231" height="190" alt="Точное расположение нашего офиса на карте">
-      <span>NЁRDS DESIGN STUDIO</span>
+      <span class="reset-text">NЁRDS DESIGN STUDIO</span>
       <span>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8, тел. +7 (812) 275-75-75
        </span>
        <button class="button red">Напишите нам</button>
@@ -180,28 +182,28 @@
       </ul>
     </div>
       <div class="social-discount">
-        <h4>Давайте дружить, это выгодно!</h4>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <h4 class="reset-text">Давайте дружить, это выгодно!</h4>
+        <p class="reset-text">Скидка 10% для друзей из социальных сетей</p>
       </div>
       </div>
     </footer>
 
     <!--всплывающее окно записи в список-->
       <div class="popup-email-form">
-    <h3>Напишите нам</h3>
+    <h3 class="reset-text">Напишите нам</h3>
     <form class="contact-form" method="post"
           action="https://echo.htmlacademy.ru">
-          <p>
+          <p class="reset-text">
             <label for="user-name">Ваше имя</label>
             <input id="user-name" type="text"
                    name="name" placeholder="Имя Фамилия">
           </p>
-          <p>
+          <p class="reset-text">
           <label for="user-email">Ваш e-mail</label>
           <input id="user-email" type="email"
                  name="email" placeholder="e-mail@example.com">
           </p>
-          <p>
+          <p class="reset-text">
           <label for="message-text">Текст письма</label>
           <input id="message-text" type="text"
                  name="text" placeholder="В свободной форме">
@@ -210,6 +212,45 @@
       <button type="button" aria-label="Закрыть">x</button>
     </form>
   </div>
-</div>
+  </div>
+
+<!--всплывающие окна у каталога-->
+  <div class="popup-catalog-sedona">
+    <h4></h4>
+    <p></p>
+    <button></button>
+  </div>
+
+  <div class="popup-catalog-pink-app visually-hidden">
+    <h4></h4>
+    <p></p>
+    <button></button>
+  </div>
+
+  <div class="popup-catalog-barbershop visually-hidden">
+    <h4></h4>
+    <p></p>
+    <button></button>
+  </div>
+
+  <div class="popup-catalog-mishka visually-hidden">
+    <h4></h4>
+    <p></p>
+    <button></button>
+  </div>
+
+  <div class="popup-catalog-a-plus visually-hidden">
+    <h4></h4>
+    <p></p>
+    <button></button>
+  </div>
+
+  <div class="popup-catalog-kvast visually-hidden">
+    <h4></h4>
+    <p></p>
+    <button></button>
+  </div>
+
+
   </body>
 </html>
