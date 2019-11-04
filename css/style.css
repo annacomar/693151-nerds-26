@@ -86,6 +86,12 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.button-write-us {
+  width: 219px;
+  font-weight: 500;
+  text-align: center;
+}
+
 .reset-text {
   margin: 0;
 }
@@ -117,19 +123,22 @@ input[type="radio"].visually-hidden {
   height: 65px;
 }
 
-.main-header-logo:hover {
+.main-header-logo a:hover {
+  color: #000000;
   opacity: 80%;
 }
-.main-header-logo:focus {
+.main-header-logo a:focus {
+  color: #000000;
   opacity: 30%;
 }
 
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 460px;
-  margin-left: 150px;
+  width: 445px;
+  margin-left: 202px;
   margin-right: 0;
+  padding-top: 17px;
 }
 
 .site-navigation li {
@@ -159,7 +168,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
-  max-width: 115px;
+  width: 112px;
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -168,6 +177,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-left: auto;
   padding: 0;
+  padding-top: 10px;
 }
 .user-navigation a {
   display: flex;
@@ -190,6 +200,22 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
+.user-navigation .basket {
+  position: relative;
+  padding-left: 26px;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -11px;
+
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/basket-icon.svg");
+  background-repeat: no-repeat;
+}
 
 .container {
   width: 1200px;
@@ -313,6 +339,7 @@ input[type="radio"].visually-hidden {
 .catalog-title-wrapper {
   display: flex;
   justify-content: center;
+  
 }
 .catalog-title {
   text-decoration: none;
@@ -327,19 +354,28 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 80px;
-  text-align: left;
-  border-bottom: #eeeeee 2px solid grey;
+  border-bottom: 2px solid #eeeeee;
 
+}
+
+.advantages-image-wrapper {
+  margin-bottom: 26px;
+  width: 300px;
+  height: 146;
 }
 
 .advantages-item {
   width: 300px;
   margin-right: 100px;
+  margin-bottom: 80px;
 }
 
 .advantages-item:last-child {
   margin-right: 0;
+}
+
+.advantages-item p {
+  width: 260px;
 }
 
 .advantages h3 {
@@ -348,34 +384,96 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   letter-spacing: normal;
   text-align: left;
+  margin-bottom: 26px;
   text-transform: uppercase;
   color: #000000;
 }
 
+.advantages-item p {
+  margin-bottom: 35px;
+}
 
 
 .about {
   display:flex;
   justify-content: space-between;
+  margin-bottom: 76px;
 }
 
 .about li{
   list-style: none;
 }
+
+.studio-nerds {
+  width: 650px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
 .who-we-are {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   text-align: left;
   color: #000000;
+  margin-bottom: 35px;
+  margin-top: 77px;
 }
 
-.studio-nerds {
-  width: 650px;
+.studio-nerds p {
+  width: 616px;
+  margin-bottom: 47px;
+}
+
+.services-wrapper {
+  width: 429px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-list {
+  position: relative;
+  padding-left: 26px;
+}
+
+.services-list::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -5px;
+
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  background-repeat: no-repeat;
+}
+
+.studio-nerds h4 {
   text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.studio-nerds li {
+  padding-left: 35px;
+  padding-bottom: 20px;
+}
+
+
+.nerds-picture-wrapper {
+  width: 360px;
+  height: 208px;
+  margin-top: 40px;
+  margin-bottom: 33px;
 }
 
 .stats-nerds {
+  display: flex;
+  flex-direction: column;
   width: 360px;
 }
 
@@ -385,17 +483,21 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 55px;
 }
+
 
 .stat-percents {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 325px;
   font-size: 45px;
   font-weight: bold;
   line-height: 10px;
   text-align: left;
   color: #000000;
+  margin-bottom: 35px;
 }
 
 .percents {
@@ -405,10 +507,15 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
+.sup {
+  font-size: 30px;
+}
+
 .great-conditions {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  width: 390px;
 }
 .great-great-conditions {
   display: flex;
@@ -417,20 +524,22 @@ input[type="radio"].visually-hidden {
 
 .partners {
   display: flex;
-  justify-content: space-between;
-  /*border */
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  padding-top: 46px;
+  padding-bottom: 44px;
+  margin-bottom: 80px;
 }
 
 .partners-list {
-
+  display: flex;
+  justify-content: space-between;
+  width: 1090px;
 }
 
-.map-wrapper {
-  width: 1440px;
-  height: 146px;
+.contacts {
+  position: relative;
 }
-
-
 
 /*catalog styles*/
 
@@ -591,17 +700,58 @@ input[type="radio"].visually-hidden {
 
 .map-wrapper {
   position: relative;
+  z-index: -1;
+  width: 1440px;
+  height: 416px;
+  margin-bottom: 78px;
 }
 
 .map-wrapper::after {
   content: "";
   background-image: url(../img/map-marker.png);
-  left: 50%;
-  top: 50%;
+  left: 57%;
+  top: 20%;
   background-repeat: no-repeat;
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 231px;
+  height: 190px;
+}
+
+
+.write-us {
+  display: inline-block;
+  position: absolute;
+  width: 319px;
+  height: 308px;
+  background-color: white;
+  top: 54px;
+  left: 140px;
+}
+
+.write-us-text {
+  padding-top: 54px;
+  padding-right: 50px;
+  padding-bottom: 47px;
+  padding-left: 50px;
+}
+
+.write-us span {
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.write-us address {
+  line-height: 18px;
+  text-align: left;
+  font-style: normal;
+  color: #666666;
+  margin-bottom: 37px;
 }
 
 .main-footer {
@@ -637,7 +787,6 @@ input[type="radio"].visually-hidden {
   background-color: #e74246;
 }
 
-
 .social-button:focus {
   background-color: #d7373b;
 }
@@ -660,7 +809,7 @@ input[type="radio"].visually-hidden {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 12px;
 }
 .social-discount p {
   display: flex;
@@ -668,7 +817,6 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   color: #444444;
   text-align: left;
-  margin-bottom: 76px;
   font-style: normal;
 }
 
