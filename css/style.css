@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -24,17 +23,13 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -48,14 +43,12 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 240px;
   padding: 13px 0;
-
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
@@ -68,7 +61,6 @@ input[type="radio"].visually-hidden {
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
-
   background-color: #d7373b;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
@@ -82,7 +74,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-advantages {
-  width:160px;
+  width: 160px;
   text-align: center;
 }
 
@@ -127,6 +119,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   opacity: 80%;
 }
+
 .main-header-logo a:focus {
   color: #000000;
   opacity: 30%;
@@ -158,10 +151,12 @@ input[type="radio"].visually-hidden {
 .site-navigation a:hover {
   color: #fb565a;
 }
+
 .site-navigation a:focus {
   color: #eeeeee;
   opacity: 30%;
 }
+
 .site-navigation a:active {
   color: #000000;
   text-decoration: underline;
@@ -179,6 +174,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 10px;
 }
+
 .user-navigation a {
   display: flex;
   justify-content: flex-end;
@@ -188,13 +184,14 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation a:hover {
- color: #fb565a;
+  color: #fb565a;
 }
 
 .user-navigation a:focus {
   color: #eeeeee;
   opacity: 30%;
 }
+
 .user-navigation a:active {
   color: #000000;
   text-decoration: underline;
@@ -210,7 +207,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 5px;
   left: -11px;
-
   width: 15px;
   height: 15px;
   background-image: url("../img/basket-icon.svg");
@@ -235,10 +231,8 @@ input[type="radio"].visually-hidden {
   left: 50%;
   bottom: 104px;
   z-index: 100;
-
   width: 160px;
   height: 18px;
-
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
@@ -250,7 +244,6 @@ input[type="radio"].visually-hidden {
   width: 18px;
   height: 18px;
   padding: 8px;
-
   border-radius: 50%;
   cursor: pointer;
 }
@@ -261,32 +254,25 @@ input[type="radio"].visually-hidden {
   top: 8px;
   left: 8px;
   z-index: 1;
-
   width: 18px;
   height: 18px;
-
   background: #ffffff;
-
   border-radius: 50%;
 }
 
 .slider-controls .active::before {
   content: "";
-
   position: absolute;
   left: 50%;
   top: 50%;
   z-index: 2;
-
   width: 4px;
   height: 4px;
   margin: -4px;
-
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
-
 
 .slider-list {
   margin: 0;
@@ -324,7 +310,6 @@ input[type="radio"].visually-hidden {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
-
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -339,8 +324,8 @@ input[type="radio"].visually-hidden {
 .catalog-title-wrapper {
   display: flex;
   justify-content: center;
-  
 }
+
 .catalog-title {
   text-decoration: none;
   font-size: 55px;
@@ -355,7 +340,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   border-bottom: 2px solid #eeeeee;
-
 }
 
 .advantages-image-wrapper {
@@ -393,14 +377,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 35px;
 }
 
-
 .about {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   margin-bottom: 76px;
 }
 
-.about li{
+.about li {
   list-style: none;
 }
 
@@ -441,8 +424,8 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 10px;
+  margin-top: -1px;
   left: -5px;
-
   width: 25px;
   height: 2px;
   background-color: #fb565a;
@@ -462,7 +445,6 @@ input[type="radio"].visually-hidden {
   padding-left: 35px;
   padding-bottom: 20px;
 }
-
 
 .nerds-picture-wrapper {
   width: 360px;
@@ -485,7 +467,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   margin-bottom: 55px;
 }
-
 
 .stat-percents {
   display: flex;
@@ -517,13 +498,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 390px;
 }
+
 .great-great-conditions {
   display: flex;
   align-items: flex-start;
 }
 
 .partners {
-  display: flex;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   padding-top: 46px;
@@ -542,11 +523,12 @@ input[type="radio"].visually-hidden {
 }
 
 /*catalog styles*/
-
-.site-navigation-current {
+/*.site-navigation-current {}
+  */
+/*.site-navigation-current:hover {
 
 }
-
+    */
 .upper-block {
   display: flex;
   flex-direction: column;
@@ -562,15 +544,15 @@ input[type="radio"].visually-hidden {
   font-size: 55px;
   line-height: 43px;
   font-weight: 500;
-
-
 }
+
 .catalog-columns {
   display: flex;
-  justify-content: space-between;
 }
 
 .catalog {
+  display: flex;
+  width: 1161px;
   width: 760px;
 }
 
@@ -583,9 +565,9 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin-bottom: 60px;
 }
-.catalog-item {
-  width:360px;
 
+.catalog-item {
+  width: 360px;
   margin-bottom: 33px;
 }
 
@@ -593,9 +575,28 @@ input[type="radio"].visually-hidden {
   margin-left: 40px;
 }
 
+.catalog-image-wrapper {
+  display: flex;
+  position: relative;
+  width: 360px;
+  height: 576px;
+}
 
-.filters {
+.catalog-popup {
+  position: absolute;
+  top: auto;
+  /*?????*/
+  left: auto;
+  display: flex;
+  width: 360px;
+  height: 231px;
+}
+
+.filters-section {
+  display: flex;
   width: 261px;
+  margin-right: 140px;
+  flex-direction: column;
 }
 
 .legend {
@@ -606,7 +607,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.catalog {
+.price-sorter {
   display: flex;
 }
 
@@ -617,7 +618,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 */
-
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
@@ -653,6 +653,7 @@ input[type="radio"].visually-hidden {
 .pagination-item a:hover {
   background-color: #dfdfdf;
 }
+
 .pagination-item a:focus {
   background-color: #d5d5d5;
   opacity: 0.3;
@@ -662,7 +663,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #ffffff;
   border: #dbdbdb solid 3px;
-  }
+}
 
 .pagination-item-current a {
   color: #000000;
@@ -672,11 +673,11 @@ input[type="radio"].visually-hidden {
   padding-right: 20px;
   padding-left: 16px;
   padding-bottom: 18px;
-  }
+}
 
 .pagination-item-next a {
   display: flex;
-  background-color:#eeeeee;
+  background-color: #eeeeee;
   color: #000000;
   line-height: 18px;
   text-align: center;
@@ -689,10 +690,7 @@ input[type="radio"].visually-hidden {
 }
 
 /*footer*/
-
 /*<img src="img/map-marker.png" width="231" height="190" alt="Точное расположение нашего офиса на карте">*/
-
-
 .main-footer .container {
   display: flex;
   align-items: center;
@@ -716,7 +714,6 @@ input[type="radio"].visually-hidden {
   width: 231px;
   height: 190px;
 }
-
 
 .write-us {
   display: inline-block;
@@ -763,6 +760,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin-right: 139px;
 }
+
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
@@ -811,6 +809,7 @@ input[type="radio"].visually-hidden {
   line-height: 36px;
   margin-bottom: 12px;
 }
+
 .social-discount p {
   display: flex;
   font-size: 16px;
@@ -820,7 +819,44 @@ input[type="radio"].visually-hidden {
   font-style: normal;
 }
 
-
 .popup-email-form {
   display: none;
 }
+
+.popup-email-form:hover {
+  position: relative;
+  width: 960px;
+  height: 590px
+}
+
+.popup-email-form:hover h3 {
+  width: 306px;
+  height: 33px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+  color: #000000;
+}
+
+.popup-email-form:hover input {
+  width: 360px;
+  height: 50px;
+  border: solid 2px #d7dcde;
+}
+
+.popup-email-form:hover .text-message-content {
+  width: 760px;
+  height: 118px;
+  border: solid 2px #d7dcde;
+}
+
+.close-button {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 21px;
+  height: 21px;
+}
+
+/*popup-email-form-catalog???? ВСПЛЫВАЮЩЕЕ ОКНО ИЛИ НЕТ? */
