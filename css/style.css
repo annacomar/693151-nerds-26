@@ -502,8 +502,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog {
-  display: flex;
-  width: 1161px;
+  width: 760px;
 }
 
 .catalog-title {
@@ -539,6 +538,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
+  position: relative;
   width: 360px;
   margin-bottom: 33px;
 }
@@ -554,12 +554,10 @@ input[type="radio"].visually-hidden {
   height: 576px;
 }
 
-.catalog-item:hover .catalog-popup {
+.catalog-popup {
   position: absolute;
-  top: auto;
-  /*?????*/
-  left: auto;
-  display: flex;
+  bottom: 0;
+  left: 0;
   width: 360px;
   height: 231px;
 }
@@ -580,6 +578,15 @@ input[type="radio"].visually-hidden {
 }
 
 .price-sorter {
+  display: flex;
+  align-items: center;
+}
+
+.sort-by-category {
+  display: flex;
+}
+
+.sort-by-priority {
   display: flex;
 }
 
