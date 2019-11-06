@@ -118,10 +118,6 @@ input[type="radio"].visually-hidden {
   border: 0;
 }
 
-.site-navigation li:last-child {
-  margin-right: 0;
-}
-
 .main-navigation {
   display: flex;
   text-transform: uppercase;
@@ -152,6 +148,14 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li {
   margin-right: 48px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 47px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-right: 44px;
 }
 
 .site-navigation li:last-child {
@@ -203,13 +207,14 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .basket {
   position: relative;
-  padding-left: 26px;
+  padding-left: 27px;
+  padding-top: 6px;
 }
 
 .basket::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: -11px;
   width: 15px;
   height: 15px;
@@ -227,7 +232,7 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
   background-color: #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 82px;
 }
 
 .slider-controls {
@@ -313,7 +318,7 @@ input[type="radio"].visually-hidden {
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -322,7 +327,8 @@ input[type="radio"].visually-hidden {
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 43px;
+  padding-top: 1px;
+  margin-bottom: 41px;
 }
 
 /*main*/
@@ -334,15 +340,15 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-image-wrapper {
-  margin-bottom: 23px;
   width: 300px;
   height: 146px;
+  margin-bottom: 24px;
 }
 
 .advantages-item {
   width: 300px;
   margin-right: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 83px;
 }
 
 .advantages-item:last-child {
@@ -350,7 +356,8 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-item p {
-  width: 260px;
+  width: 270px;
+  margin-bottom: 3px;
 }
 
 .advantages h3 {
@@ -359,7 +366,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   letter-spacing: normal;
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -371,7 +378,8 @@ input[type="radio"].visually-hidden {
 .about {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 76px;
+  padding-left: 2px;
+  margin-bottom: 54px;
 }
 
 .about li {
@@ -391,13 +399,17 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   text-align: left;
   color: #000000;
-  margin-bottom: 35px;
-  margin-top: 77px;
+  padding-bottom: 32px;
+  padding-top: 77px;
 }
 
 .studio-nerds p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+  color: #283136;
   width: 616px;
-  margin-bottom: 47px;
+  margin-bottom: 35px;
 }
 
 .services-wrapper {
@@ -429,12 +441,14 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   line-height: 24px;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 26px;
 }
 
 .studio-nerds li {
   padding-left: 35px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
+  line-height: 24px;
+  vertical-align: top;
 }
 
 .nerds-picture-wrapper {
@@ -712,6 +726,99 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* Для демонстрации */
+  width: 260px;
+  margin: 50px auto;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
 .price-fieldset {
   margin-bottom: 62px;
 }
@@ -839,7 +946,6 @@ input[type="radio"].visually-hidden {
 
 .map-wrapper {
   position: relative;
-  /*z-index: -1;*/
   width: 1440px;
   height: 416px;
   margin-bottom: 78px;
@@ -857,14 +963,12 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us {
-  display: inline-block;
   position: absolute;
   width: 319px;
   height: 308px;
   background-color: white;
   top: 54px;
   left: 140px;
-  padding-bottom: 47px;
 }
 
 .write-us-text {
@@ -892,7 +996,12 @@ input[type="radio"].visually-hidden {
 }
 
 .tel {
-  margin-bottom: 37px;
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: #666666;
+  padding-bottom: 25px;
 }
 
 .main-footer {
@@ -957,7 +1066,7 @@ input[type="radio"].visually-hidden {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
-  margin-bottom: 12px;
+  padding-bottom: 25px;
 }
 
 .social-discount p {
@@ -974,14 +1083,17 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-email-form {
+  display: flex;
   position: fixed;
   text-align: center;
   width: 960px;
   height: 590px;
+  background-color: #eeeeee;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .popup-email-form h3 {
+  display: flex;
   width: 306px;
   height: 33px;
   font-size: 45px;
@@ -999,6 +1111,15 @@ input[type="radio"].visually-hidden {
 
 .popup-email-form input {
   width: 100%;
+  border: solid 2px #d7dcde;
+}
+
+.input-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+  vertical-align: center;
+  text-align: left;
 }
 
 .popup-email-form .text-message-content {
